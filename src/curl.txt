@@ -1,0 +1,104 @@
+curl -X 'POST' \
+  'https://petstore.swagger.io/v2/pet' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id": 0,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}'
+
+---------------------------------------------------------------------------------------
+curl -X 'PUT' \
+  'https://petstore.swagger.io/v2/pet' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id": 0,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}'
+
+---------------------------------------------------------------------------------------
+----- actualiza por valores
+curl -X 'POST' \
+  'https://petstore.swagger.io/v2/pet/12345' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d 'name=doggie&status=sold'
+
+https://petstore.swagger.io/v2/pet/12345
+
+{
+  "code": 200,
+  "type": "unknown",
+  "message": "12345"
+}
+
+ access-control-allow-headers: Content-Type,api_key,Authorization
+ access-control-allow-methods: GET,POST,DELETE,PUT
+ access-control-allow-origin: *
+ content-type: application/json
+ date: Thu,12 Dec 2024 15:52:56 GMT
+ server: Jetty(9.2.9.v20150224)
+
+ ---------------------------------------------------------------------------------------
+curl -X 'GET' \
+  'https://petstore.swagger.io/v2/pet/findByStatus?status=sold' \
+  -H 'accept: application/json'
+
+https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+
+ access-control-allow-headers: Content-Type,api_key,Authorization
+ access-control-allow-methods: GET,POST,DELETE,PUT
+ access-control-allow-origin: *
+ content-type: application/json
+ date: Thu,12 Dec 2024 16:05:10 GMT
+ server: Jetty(9.2.9.v20150224)
+
+ [
+   {
+     "id": 0,
+     "category": {
+       "id": 0,
+       "name": "string"
+     },
+     "name": "doggie",
+     "photoUrls": [
+       "string"
+     ],
+     "tags": [
+       {
+         "id": 0,
+         "name": "string"
+       }
+     ],
+     "status": "available"
+   }
+ ]
