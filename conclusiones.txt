@@ -28,4 +28,4 @@ Conclusiones
 4. Reproducibilidad y Mantenimiento:
    - La estructura modular del proyecto hace que sea fácil de mantener y escalar. Los cambios en las APIs o en los datos de prueba pueden ser fácilmente gestionados y adaptados en los archivos `.feature`.
    
-En resumen, Karate demuestra ser una herramienta potente y flexible para automatizar pruebas de APIs REST. Este ejercicio ha sido útil para aprender a crear y ejecutar pruebas de integración en un servicio RESTful, y proporciona una base sólida para futuras ampliaciones y mejoras en las pruebas de servicios.
+En resumen, Karate demuestra ser una herramienta potente y flexible para automatizar pruebas de APIs REST. 
