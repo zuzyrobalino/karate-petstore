@@ -7,7 +7,7 @@ Requisitos previos:
 Pasos para ejecutar las pruebas:
 
 1. Clonar el repositorio:
-   git clone <URL_DEL_REPOSITORIO>
+   git clone [<URL_DEL_REPOSITORIO>](https://github.com/zuzyrobalino/karate-petstore.git)
 
 2. Navegar al directorio del proyecto:
    cd karate-petstore
